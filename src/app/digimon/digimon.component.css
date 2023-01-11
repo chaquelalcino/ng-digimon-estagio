@@ -1,0 +1,89 @@
+/* digimonComponent's private CSS styles */
+.digimon {
+  margin: 0 0 2em 0;
+  list-style-type: none;
+  padding: 0;
+  width: 100%;
+}
+
+.digimon li {
+  display: flex;
+}
+
+.digimon button {
+  flex: 1;
+  cursor: pointer;
+  position: relative;
+  left: 0;
+  background-color: #EEE;
+  margin: .5em;
+  padding: 0;
+  border-radius: 4px;
+  display: flex;
+  align-items: stretch;
+  height: 1.8em;
+}
+
+.digimon button:hover {
+  color: #2c3a41;
+  background-color: #e6e6e6;
+  left: .1em;
+}
+
+.digimon button:active {
+  background-color: #525252;
+  color: #fafafa;
+}
+
+.digimon button.selected {
+  background-color: black;
+  color: white;
+}
+
+.digimon button.selected:hover {
+  background-color: #505050;
+  color: white;
+}
+
+.digimon button.selected:active {
+  background-color: black;
+  color: white;
+}
+
+.digimon .level {
+  display: inline-block;
+  font-size: small;
+  color: white;
+  padding: 0.8em 0.7em 0 0.7em;
+  background-color: #405061;
+  line-height: 1em;
+  margin-right: .8em;
+  border-radius: 4px 0 0 4px;
+  width: 40%;
+}
+
+.digimon .name {
+  align-self: center;
+  width: 60%;
+}
+
+.digimon-container {
+  display: flex;
+  flex-direction: row;
+  width: 100vw;
+  height: 70vh;
+}
+.digimon-list-container {
+  display: flex;
+  flex-direction: column;
+  width: 30vw;
+  height: 100%;
+  overflow-y: scroll;
+}
+.digimon-detail-container {
+  width: 70vw;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}

@@ -1,0 +1,23 @@
+<div class="digimon-container">
+  <div>
+    <app-filter [onPress]="onPress.bind(this)"></app-filter>
+    <h2>Lista de Digimons</h2>
+    <div class="digimon-list-container">
+      <ul class="digimon">
+        <li *ngFor="let digimon of digimons">
+          <button
+            [class.selected]="digimon === selectedDigimon"
+            type="button"
+            (click)="onSelect(digimon)"
+          >
+            <span class="level">{{ digimon.level }}</span>
+            <span class="name">{{ digimon.name }}</span>
+          </button>
+        </li>
+      </ul>
+    </div>
+  </div>
+  <div class="digimon-detail-container">
+    <app-digimon-detail [digimon]="selectedDigimon"></app-digimon-detail>
+  </div>
+</div>

@@ -1,0 +1,8 @@
+<div class="filter-container">
+    <input id="digimon-name" [(ngModel)]="name" placeholder="Nome" />
+    <input id="digimon-level" [(ngModel)]="level" placeholder="Level" />
+  
+    <div *ngIf="onPress">
+      <button type="button" (click)="onPress(name, level)">Buscar</button>
+    </div>
+  </div>
